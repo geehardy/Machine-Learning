@@ -112,13 +112,12 @@ def cart(X, y):
         tree[feat][v] = cart(subX.drop(feat, axis=1), suby)
     return tree
 
-# ===================== 4. 生成并打印树 =====================
-print("="*50)
+# 测试git版本管路
+print("="*60)
 print("【ID3 决策树】")
 id3_tree = id3(X, y, list(X.columns))
-print(id3_tree)
 
-print("\n" + "="*50)
-print("【CART 决策树】")
+print("\n" + "="*60)
+print("【CART222222 决策树】")
 cart_tree = cart(X, y)
 print(cart_tree)
